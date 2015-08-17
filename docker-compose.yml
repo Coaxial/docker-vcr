@@ -1,0 +1,5 @@
+sabnzbd:
+  image: timhaak/sabnzbd
+  volumes:
+    - ./sabnzbd/config/:/config/ # Also contains logs
+    - ./storage/:/data/ # Will download to this directory
