@@ -14,3 +14,5 @@ couchpotato:
     - ./storage/:/storage/ # Will download to this directory
   ports:
     - 5050
+  links:
+    - sabnzbd
