@@ -1,5 +1,9 @@
 sabnzbd:
-  image: timhaak/sabnzbd
+  build: ./sabnzbd
   volumes:
     - ./sabnzbd/config/:/config/ # Also contains logs
     - ./storage/:/data/ # Will download to this directory
+  ports:
+    - 8080
+    - 9090
+
