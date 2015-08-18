@@ -20,7 +20,7 @@ couchpotato:
 sonarr:
   build: ./sonarr
   volumes:
-    - ./sonarr/config/:/config/
+    - ./sonarr/config/:/root/.config/
     - ./storage/:/storage/
   ports:
     - 8989
