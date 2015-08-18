@@ -7,3 +7,10 @@ sabnzbd:
     - 8080
     - 9090
 
+couchpotato:
+  build: ./couchpotato
+  volumes:
+    - ./couchpotato/config/:/config/
+    - ./storage/:/storage/ # Will download to this directory
+  ports:
+    - 5050
