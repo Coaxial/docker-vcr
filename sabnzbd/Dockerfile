@@ -13,7 +13,7 @@ RUN echo "deb http://archive.ubuntu.com/ubuntu trusty multiverse" >> /etc/apt/so
     rm -rf /var/lib/apt/lists/* && \
     rm -rf /tmp/*
 
-VOLUME ["/config","/data"]
+VOLUME ["/config","/storage"]
 
 EXPOSE 8080 9090
 
