@@ -16,3 +16,13 @@ couchpotato:
     - 5050
   links:
     - sabnzbd
+
+sonarr:
+  build: ./sonarr
+  volumes:
+    - ./sonarr/config/:/config/
+    - ./storage/:/storage/
+  ports:
+    - 8989
+  links:
+    - sabnzbd
